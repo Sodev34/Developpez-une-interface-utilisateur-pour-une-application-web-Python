@@ -64,7 +64,7 @@ button:hover {
 
 
 .best {
-    background-image: url(images/exemple1.png); 
+    background-image: url(images/fond1.png); 
     background-size: cover; 
     padding: 100px 500px 100px 0px;
     box-shadow: 0 30px 20px rgb(0 0 0/80%);
@@ -241,7 +241,7 @@ button:hover {
 }
 
 .modal-content {
-    background-image: url(images/exemple2.png);
+    background-image: url(images/fond2.png);
     border-radius: 10px;
     margin: 5% auto;
     max-width: 1500px;
