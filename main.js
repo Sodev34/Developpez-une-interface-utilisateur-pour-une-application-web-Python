@@ -1,5 +1,7 @@
 const apiUrl = "http://localhost:8000/api/v1/titles/"
 
+// récupération des ressources
+
 async function get_request(apiUrl){
     let response = await fetch(apiUrl)
     if (response.ok){
@@ -10,6 +12,7 @@ async function get_request(apiUrl){
 
 }
 
+// Meilleur film
 
 function collectBestMovie() {
     let bestTitle = document.getElementById('high-title');
@@ -29,6 +32,7 @@ function collectBestMovie() {
         })
 }
 
+// Modale
 
 function openModal(id) {
     let modal = document.getElementById("modal");
@@ -73,6 +77,8 @@ function collectModalData(id) {
                 modalDescription.innerHTML = data["long_description"];
         })
 }
+
+// Catégorie
 
 async function collectCategories(name){
         let moviesData = []
@@ -203,11 +209,14 @@ async function constructorCarousel(category, name) {
     section.appendChild(carousel);
 }
 
+// Téléchargement du meilleur film et des 4 catégories
+
 window.addEventListener('load', () => {
+    collectBestMovie();
     constructorCarousel("Film les mieux notés", "top-movies");
     constructorCarousel("Action", "Action");
     constructorCarousel("Animation", "Animation");
     constructorCarousel("Science fiction", "Sci-Fi");
 
-    collectBestMovie()
+    
 });

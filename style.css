@@ -189,7 +189,7 @@ button:hover {
 
 
 .btn.show {
-    opacity: 0.6;
+    opacity: 0.8;
     transform: translateY(-50%) scale(1);
     visibility: visible;
 }
