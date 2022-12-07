@@ -1,3 +1,5 @@
+/* Générique */
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,6 +25,7 @@ button:hover {
     color: white;
 }
 
+/* entête */
 
 .header {
     align-items: center;
@@ -61,7 +64,7 @@ button:hover {
 }
 
 
-
+/* Meilleur film */
 
 .best {
     background-image: url(images/fond1.png); 
@@ -115,7 +118,7 @@ button:hover {
     left: 100px; 
 }
 
-
+/* Catégorie */
 
 .categories {
     align-items: center;
@@ -229,7 +232,7 @@ button:hover {
 }
 
 
-
+/* Modale */
 
 .modal {
     background-color: rgba(29, 27, 27, 0.6);
