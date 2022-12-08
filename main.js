@@ -209,7 +209,7 @@ async function constructorCarousel(category, name) {
     section.appendChild(carousel);
 }
 
-// Téléchargement du meilleur film et des 4 catégories
+// Récupération du meilleur film et des 4 catégories
 
 window.addEventListener('load', () => {
     collectBestMovie();
