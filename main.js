@@ -75,6 +75,7 @@ function collectModalData(id) {
                 modalDescription.innerHTML = " Non disponible";
             else
                 modalDescription.innerHTML = data["long_description"];
+
         })
 }
 
@@ -94,7 +95,7 @@ async function collectCategories(name){
             moviesData.push(response_page2.results[i])
             }
         }
-
+        console.log(moviesData)
         return moviesData
     }
 
@@ -104,7 +105,7 @@ function carouselGoLeft(category) {
     let carrouselLeft= document.querySelector("#" + category + "-left");
     let carrouselRight = document.querySelector("#" + category + "-right");
 
-    carrouselContent.style.left = "-680px";
+    carrouselContent.style.left = "-630px";
     carrouselRight.classList.remove("show");
     carrouselLeft.classList.add("show");
 }
